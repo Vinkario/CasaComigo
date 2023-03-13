@@ -19,6 +19,7 @@ section h1{
     border-radius: 5px;
     color: #fff;
     background-color: green;
+    position: absolute;
 }
 
 .nao{
@@ -32,6 +33,6 @@ section h1{
 
 .buttons{
     display: flex;
-    gap: 10px;
+    gap: 140px;
 }
 
