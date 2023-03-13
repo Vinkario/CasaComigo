@@ -1,14 +1,16 @@
+const simButton = document.querySelector('.sim')
 
-function moveButton() {
-    let simButton = document.querySelector(".sim");
-
-    let x = Math.floor(Math.random() * window.innerWidth);
-    let y = Math.floor(Math.random() * window.innerHeight);
-
-    simButton.style.position = "absolute"; 
-    simButton.style.left = x + "px"; 
-    simButton.style.top = y + "px"; 
+function moverBotao() {
+    const windowHeight = window.innerHeight;
+    const windowWidth = window.innerWidth;
+  
+    // Define novas coordenadas aleatórias para o botão
+    const newTop = Math.floor(Math.random() * (windowHeight - simButton.offsetHeight));
+    const newLeft = Math.floor(Math.random() * (windowWidth - simButton.offsetWidth));
+  
+    // Move o botão para as novas coordenadas
+    simButton.style.marginTop = newTop + 'px';
+    simButton.style.marginLeft = newLeft + 'px';
 }
 
-var simButton = document.querySelector(".sim"); 
-simButton.addEventListener("click", moveButton); 
+simButton.addEventListener("click", moverBotao)
