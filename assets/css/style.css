@@ -1,16 +1,21 @@
-section {
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 500px;
+    height: 500px;
     display: flex;
-    flex-direction: column;
-    text-align: center;
     justify-content: center;
     align-items: center;
+    margin: 50px auto;
 }
 
-section h1{
+.container h1{
+    margin-bottom: 50px;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 30px;
 }
-
 
 .sim{
     padding: 10px;
@@ -34,5 +39,33 @@ section h1{
 .buttons{
     display: flex;
     gap: 140px;
+    width: 100px;
+    height: 200px;
 }
 
+.modal{
+    width: 300px;
+    height: 100px;
+    background-color: blue;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    display: none;
+    position: absolute;
+
+}
+
+.close{
+    align-self:flex-end;
+    position: relative;
+    margin-right: 10px;
+    margin-bottom:20px ;
+}
+
+.modal h2{
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 25px;
+}
