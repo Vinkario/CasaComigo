@@ -4,8 +4,8 @@
     box-sizing: border-box;
 }
 .container{
-    width: 500px;
-    height: 500px;
+    min-width: 500px;
+    min-height: 500px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -25,6 +25,8 @@
     color: #fff;
     background-color: green;
     position: absolute;
+    left: 200px;
+
 }
 
 .nao{
@@ -34,13 +36,15 @@
     border-radius: 5px;
     color: #fff;
     background-color: red;
+    position: absolute;
+    right: 200px;
 }
 
 .buttons{
     display: flex;
-    gap: 140px;
-    width: 100px;
-    height: 200px;
+    justify-content: center;
+    align-items: center;
+   
 }
 
 .modal{
@@ -54,6 +58,7 @@
     border-radius: 10px;
     display: none;
     position: absolute;
+    top: 300px;
 
 }
 
@@ -69,3 +74,4 @@
     font-family: Arial, Helvetica, sans-serif;
     margin-bottom: 25px;
 }
+
